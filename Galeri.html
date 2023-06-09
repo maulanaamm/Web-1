@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeri</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="icon.png">
+<body>
+    <header>
+        <h1>Selamat datang di Website Wisata</h1>
+        <!-- NAVIGASI BAR -->
+            <nav>
+                <ul>
+                    <li><a href="landing_page.html">Beranda</a></li>
+                    <li><a href="Destinasi.html">Destinasi</a></li>
+                    <li><a href="Galeri.html">Galeri</a></li>
+                    <li><a href="Kontak.html">Kontak</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+    </header>  
+    <!-- ISI KONTEN -->
+  </header>
+
+  <section class="gallery">
+    <h1>Galery Destinasi</h1>
+    <div class="gallery-images">
+      <div class="gallery-item">
+        <img src="camp.jpg" alt="Gambar 1" onclick="showImage(this)">
+      </div>
+      <div class="gallery-item">
+        <img src="destinasipopuler.jpg" alt="Gambar 2" style="height: 180px; width: 280px;" onclick="showImage(this)">
+      </div>
+      <div class="gallery-item">
+        <img src="galunggung.jpg" alt="Gambar 3" onclick="showImage(this)">
+      </div>
+      <div class="gallery-item">
+        <img src="karang tawulan.jpg" alt="Gambar 3" onclick="showImage(this)">
+      </div>
+      <div class="gallery-item">
+        <img src="karangresik.webp" alt="Gambar 3" onclick="showImage(this)">
+      </div>
+      <div class="gallery-item">
+        <img src="laut.jpg" alt="Gambar 3" onclick="showImage(this)">
+      </div>
+      <div class="gallery-item">
+        <img src="curug.jpg" alt="Gambar 3" onclick="showImage(this)">
+      </div>
+      <div class="gallery-item">
+        <img src="curug deng deng.webp" alt="Gambar 3" onclick="showImage(this)">
+      </div>
+      <div class="gallery-item">
+        <img src="pinus.jpg" alt="Gambar 3" onclick="showImage(this)">
+      </div>
+      <!-- Tambahkan gambar lainnya -->
+    </div>
+  </section>
+
+  <div id="image-modal" class="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img id="modal-image" src="" alt="Pop-up Image">
+  </div>
+
+  <script src="script.js"></script>
+        
+        <!-- Konten footer -->
+      <footer>
+        <p>Hak Cipta &copy; 2023 Kelompok 2. All rights reserved.</p>
+      </footer>
+  </body>
+</html>

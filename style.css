@@ -1,0 +1,277 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to bottom, #0e1623, #1f2a3f);
+    color: #fff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #1f2a3f;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #c8d1e2;
+  }
+  
+  section {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fafafa;
+  }
+
+  .destination {
+    margin-bottom: 20px;
+  }
+  
+  .destination h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #b4b6b9;
+  }
+  
+  .destination img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Sesuaikan dengan tinggi header dan footer */
+  }
+  
+  .login-form {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Tengahkan form secara horizontal */
+  }  
+  
+  .login-form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1f2a3f;
+    text-align: center;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1f2a3f;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-form input[type="submit"] {
+    background-color: #1f2a3f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-form input[type="submit"]:hover {
+    background-color: #0e1623;
+  }
+
+/* STyle untuk halaman Kontak */
+
+section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-info p {
+    margin-bottom: 5px;
+    color: #a7a9b3;
+  }
+  
+  .contact-form {
+    max-width: 400px;
+  }
+  
+  .contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+  }
+  
+  .contact-form input[type="submit"] {
+    border-radius: 0%;
+    background-color: #0e1623;
+    color: #FFF;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #555;
+  }
+
+  /* style untuk lokasi */
+  .deskripsi a{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lokasi a {
+    color: #fff;
+  }
+
+/* Gaya untuk halaman Galeri */
+
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Gaya untuk overlay saat gambar diklik */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.modal .close {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+
+  footer {
+    background-color: #1f2a3f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid #fff;
+  }
+  
